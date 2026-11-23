@@ -276,6 +276,7 @@ class MainActivity : ComponentActivity() {
         refreshFileState()
     }
 
+    @JvmName("applyAutoMode")
     private fun setAutoMode(auto: Boolean) {
         if (!auto && autoMode) manualPath = currentTarget()
         autoMode = auto
